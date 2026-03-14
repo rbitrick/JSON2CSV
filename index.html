@@ -35,6 +35,11 @@
         #jsonInput {
             padding: 5%
         }
+
+        .jsonFile{
+            margin: 50px;
+            font-family: monospace;
+        }
     </style>
 </head>
 <body>
@@ -44,6 +49,9 @@
     <textarea rows="10" cols="50" placeholder="Paste JSON Here" class="inputFields" id="jsonInput"></textarea>
     <br>
     <button class="inputFields" id="submitButton">Submit</button>
+    <br>
+    <label for="jsonFile">Convert a File instead:</label>
+    <input type="file" class="jsonFile" name="jsonFile"></input>
 </body>
 
 <script src="index.js"></script>
