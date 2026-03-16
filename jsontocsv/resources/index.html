@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON2CSV</title>
+    <style>
+        body {
+            margin: auto;
+            text-align: center;
+            border: 1px solid;
+            margin-top: 25px;
+            max-width: 50%;
+            padding: 10px;
+            box-shadow: black 10px 10px;
+            font-family: monospace;
+            border-radius: 25px;
+
+        }
+        .inputFields {
+            padding: 20px;
+            margin: 10px;
+            border: none;
+            box-shadow: black 5px 5px;
+            background-color: aliceblue;
+            border-radius: 10px;
+            font-family: monospace;
+            
+        }
+        #submitButton:active {
+            box-shadow: black 1px 1px;
+            transition: 100ms;
+        }
+
+        #jsonInput {
+            padding: 5%
+        }
+
+        .jsonFile{
+            margin: 50px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JSON to CSV Converter</h1>
+    <h4>This application is used to take a JSON message and convert it into a CSV file for later use</h4>
+    <textarea rows="10" cols="50" placeholder="Paste JSON Here" class="inputFields" id="jsonInput"></textarea>
+    <br>
+    <button class="inputFields" id="submitButton">Submit</button>
+    <br>
+    <label for="jsonFile">Convert a File instead:</label>
+    <input type="file" class="jsonFile" name="jsonFile"></input>
+</body>
+
+<script src="index.js"></script>
+
+</html>
